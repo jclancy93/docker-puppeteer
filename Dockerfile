@@ -1,5 +1,5 @@
 # A minimal Docker image with Node and Puppeteer
-FROM node:10.2.1
+FROM node:10.20.1
 
 # Update
 RUN apt-get update && \
