@@ -3,7 +3,7 @@ FROM node:10.2.1
 
 # Update
 RUN apt-get update && \
-      apt-get -y install sudo
+      apt-get -y install sudo zip unzip
 
 ## install phantomjs
 #
