@@ -5,7 +5,7 @@
 FROM circleci/node:10.2.1
 
 # Update
-RUN apt-get update
+RUN sudo apt-get update
 
 ## install phantomjs
 #
