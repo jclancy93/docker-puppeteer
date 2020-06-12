@@ -3,7 +3,7 @@ FROM node:10.20.1
 
 # Update
 RUN apt-get update && \
-      apt-get -y install sudo zip unzip
+      apt-get -y install sudo zip unzip xvfb
 
 ## install phantomjs
 #
