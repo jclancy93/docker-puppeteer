@@ -43,4 +43,4 @@ RUN printf '#!/bin/sh\nXvfb :99 -screen 0 1280x1024x24 &\nexec "$@"\n' > /tmp/en
 
 # Install Puppeteer under /node_modules so it's available system-wide
 ADD package.json package-lock.json /
-RUN npm install
+RUN npm install  --unsafe-perm
