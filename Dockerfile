@@ -4,6 +4,9 @@
 ###
 FROM circleci/node:10.2.1
 
+# Update
+RUN apt-get update
+
 ## install phantomjs
 #
 RUN PHANTOMJS_URL="https://circle-downloads.s3.amazonaws.com/circleci-images/cache/linux-amd64/phantomjs-latest.tar.bz2" \
