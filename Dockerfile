@@ -40,7 +40,3 @@ ENV DISPLAY :99
 RUN printf '#!/bin/sh\nXvfb :99 -screen 0 1280x1024x24 &\nexec "$@"\n' > /tmp/entrypoint \
   && chmod +x /tmp/entrypoint \
         && sudo mv /tmp/entrypoint /docker-entrypoint.sh
-
-# Install Puppeteer under /node_modules so it's available system-wide
-ADD package.json package-lock.json /
-RUN sudo npm install --unsafe-perm
