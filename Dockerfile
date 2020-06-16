@@ -23,7 +23,7 @@ RUN export CHROMEDRIVER_RELEASE=$(curl --location --fail --retry 3 http://chrome
       && chromedriver --version
       
 # install libgconf-2-4 manually since chrome no longer pulls it in automatically
-RUN sudo apt-get install -y libgconf-2-4
+RUN sudo apt-get install -y libgconf-2-4 libpangocairo-1.0-0 libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 libxi6 libxtst6 libnss3 libcups2 libxss1 libxrandr2 libgconf2-4 libasound2 libatk1.0-0 libgtk-3-0
 
 # start xvfb automatically to avoid needing to express in gitlab-ci.yml file
 ENV DISPLAY :99
